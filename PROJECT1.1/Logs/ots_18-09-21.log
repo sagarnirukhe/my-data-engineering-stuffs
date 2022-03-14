@@ -1,0 +1,9 @@
+18-09-21:INFO: ********** Script Execution Start **********
+18-09-21:INFO: Mysql DDL Script executed Successfully.
+18-09-21:INFO: MySql Data Import Start.
+18-09-21:INFO: MySql Data Import Completed.
+18-09-21:INFO: SQOOP Job Created Successfully.
+18-09-21:INFO: SQOOP Job Created Successfully.
+18-09-21:INFO: Avaro-Schema imported into HDFS Successfully.
+18-09-21:INFO: HIVE Job Created Successfully.
+18-09-21:INFO: ********** Script Execution Completed **********

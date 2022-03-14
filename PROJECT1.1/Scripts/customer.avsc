@@ -1,0 +1,109 @@
+{
+  "type" : "record",
+  "name" : "customer",
+  "doc" : "Sqoop import of customer",
+  "fields" : [ {
+    "name" : "custid",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "custid",
+    "sqlType" : "-5"
+  }, {
+    "name" : "username",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "username",
+    "sqlType" : "12"
+  }, {
+    "name" : "quote_count",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "quote_count",
+    "sqlType" : "12"
+  }, {
+    "name" : "ip",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ip",
+    "sqlType" : "12"
+  }, {
+    "name" : "entry_time",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "entry_time",
+    "sqlType" : "12"
+  }, {
+    "name" : "prp_1",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "prp_1",
+    "sqlType" : "12"
+  }, {
+    "name" : "prp_2",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "prp_2",
+    "sqlType" : "12"
+  }, {
+    "name" : "prp_3",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "prp_3",
+    "sqlType" : "12"
+  }, {
+    "name" : "ms",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ms",
+    "sqlType" : "12"
+  }, {
+    "name" : "http_type",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "http_type",
+    "sqlType" : "12"
+  }, {
+    "name" : "purchase_category",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "purchase_category",
+    "sqlType" : "12"
+  }, {
+    "name" : "total_count",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "total_count",
+    "sqlType" : "12"
+  }, {
+    "name" : "purchase_sub_category",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "purchase_sub_category",
+    "sqlType" : "12"
+  }, {
+    "name" : "http_info",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "http_info",
+    "sqlType" : "12"
+  }, {
+    "name" : "status_code",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "status_code",
+    "sqlType" : "4"
+  }, {
+    "name" : "filename",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "filename",
+    "sqlType" : "12"
+  }, {
+    "name" : "create_dt",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "create_dt",
+    "sqlType" : "91"
+  } ],
+  "tableName" : "customer"
+}

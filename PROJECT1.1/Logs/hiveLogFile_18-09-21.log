@@ -1,0 +1,55 @@
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hbase-1.3.0/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hadoop-3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2021-09-18 10:58:51,801 WARN  [main] util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hive-3.1.0/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hadoop-3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = 691c21aa-f9b6-4dec-9f89-4218d8bfe133
+
+Logging initialized using configuration in jar:file:/usr/local/hadoop-env/hive-3.1.0/lib/hive-common-3.1.0.jar!/hive-log4j2.properties Async: true
+Hive Session ID = b784030d-89b6-4b54-93eb-86827be479c8
+OK
+Time taken: 0.66 seconds
+OK
+Time taken: 0.054 seconds
+OK
+Time taken: 0.455 seconds
+OK
+tbl_external_customer
+tbl_manage_customer
+temp_customer_tbl
+Time taken: 0.13 seconds, Fetched: 3 row(s)
+Query ID = saif_20210918105857_6678250a-58a9-4e25-ae80-64eaa6d1f66f
+Total jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631933353464_0011, Tracking URL = http://localhost:8088/proxy/application_1631933353464_0011/
+Kill Command = /usr/local/hadoop-env/hadoop-3.2.1/bin/mapred job  -kill job_1631933353464_0011
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-18 10:59:07,749 Stage-1 map = 0%,  reduce = 0%
+2021-09-18 10:59:13,990 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.9 sec
+MapReduce Total cumulative CPU time: 2 seconds 900 msec
+Ended Job = job_1631933353464_0011
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://localhost:9000/user/hive/warehouse/hive_customer_db.db/tbl_external_customer/.hive-staging_hive_2021-09-18_10-58-57_936_1653718036472983509-1/-ext-10000
+Loading data to table hive_customer_db.tbl_external_customer partition (year=null, month=null)
+
+
+	 Time taken to load dynamic partitions: 0.565 seconds
+	 Time taken for adding to write entity : 0.005 seconds
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.9 sec   HDFS Read: 25192 HDFS Write: 7862 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 900 msec
+OK
+Time taken: 18.132 seconds
+OK
+Time taken: 0.139 seconds

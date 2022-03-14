@@ -1,0 +1,300 @@
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../hcatalog does not exist! HCatalog jobs will fail.
+Please set $HCAT_HOME to the root of your HCatalog installation.
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.SQOOP.SQOOP_USER: invalid variable name
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.SQOOP.SQOOP_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hadoop-3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hbase-1.3.0/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2021-09-18 10:48:54,012 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../hcatalog does not exist! HCatalog jobs will fail.
+Please set $HCAT_HOME to the root of your HCatalog installation.
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.SQOOP.SQOOP_USER: invalid variable name
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.SQOOP.SQOOP_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hadoop-3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hbase-1.3.0/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2021-09-18 10:48:55,209 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6
+2021-09-18 10:48:55,562 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../hcatalog does not exist! HCatalog jobs will fail.
+Please set $HCAT_HOME to the root of your HCatalog installation.
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.SQOOP.SQOOP_USER: invalid variable name
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.SQOOP.SQOOP_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hadoop-3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hbase-1.3.0/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2021-09-18 10:48:58,242 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6
+2021-09-18 10:48:58,627 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-09-18 10:48:58,801 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+2021-09-18 10:48:58,801 INFO tool.CodeGenTool: Beginning code generation
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+2021-09-18 10:48:58,963 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `customer` AS t LIMIT 1
+2021-09-18 10:48:58,992 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `customer` AS t LIMIT 1
+2021-09-18 10:48:59,004 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/local/hadoop-env/hadoop-3.2.1
+Note: /tmp/sqoop-saif/compile/87b9c7f4618d64b0c928f3d7058089c0/customer.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2021-09-18 10:49:00,292 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-saif/compile/87b9c7f4618d64b0c928f3d7058089c0/customer.jar
+2021-09-18 10:49:00,784 INFO tool.ImportTool: Maximal id query for free form incremental import: SELECT MAX(`create_dt`) FROM `customer`
+2021-09-18 10:49:00,787 INFO tool.ImportTool: Incremental import based on column `create_dt`
+2021-09-18 10:49:00,787 INFO tool.ImportTool: Lower bound value: '1900-01-01'
+2021-09-18 10:49:00,787 INFO tool.ImportTool: Upper bound value: '2021-09-18'
+2021-09-18 10:49:00,787 WARN manager.MySQLManager: It looks like you are importing from mysql.
+2021-09-18 10:49:00,787 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+2021-09-18 10:49:00,787 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+2021-09-18 10:49:00,787 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+2021-09-18 10:49:00,792 INFO mapreduce.ImportJobBase: Beginning import of customer
+2021-09-18 10:49:00,793 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2021-09-18 10:49:00,799 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+2021-09-18 10:49:00,828 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `customer` AS t LIMIT 1
+2021-09-18 10:49:00,921 INFO mapreduce.DataDrivenImportJob: Writing Avro schema file: /tmp/sqoop-saif/compile/87b9c7f4618d64b0c928f3d7058089c0/customer.avsc
+2021-09-18 10:49:00,954 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2021-09-18 10:49:01,040 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+2021-09-18 10:49:01,338 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/saif/.staging/job_1631933353464_0007
+2021-09-18 10:49:01,443 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,525 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,548 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,585 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,628 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,644 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,664 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,683 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,705 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,726 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,746 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,764 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,787 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:01,814 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,263 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,303 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,334 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,359 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,381 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,402 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,426 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,456 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,900 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,932 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,954 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,976 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:02,998 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,025 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,040 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,056 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,506 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,550 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,590 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,621 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,645 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,669 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,685 INFO db.DBInputFormat: Using read commited transaction isolation
+2021-09-18 10:49:03,701 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,712 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,717 INFO mapreduce.JobSubmitter: number of splits:1
+2021-09-18 10:49:03,798 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:49:03,812 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1631933353464_0007
+2021-09-18 10:49:03,812 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2021-09-18 10:49:03,958 INFO conf.Configuration: resource-types.xml not found
+2021-09-18 10:49:03,958 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2021-09-18 10:49:04,018 INFO impl.YarnClientImpl: Submitted application application_1631933353464_0007
+2021-09-18 10:49:04,044 INFO mapreduce.Job: The url to track the job: http://localhost:8088/proxy/application_1631933353464_0007/
+2021-09-18 10:49:04,044 INFO mapreduce.Job: Running job: job_1631933353464_0007
+2021-09-18 10:49:10,484 INFO mapreduce.Job: Job job_1631933353464_0007 running in uber mode : false
+2021-09-18 10:49:10,491 INFO mapreduce.Job:  map 0% reduce 0%
+2021-09-18 10:49:15,555 INFO mapreduce.Job:  map 100% reduce 0%
+2021-09-18 10:49:15,576 INFO mapreduce.Job: Job job_1631933353464_0007 completed successfully
+2021-09-18 10:49:15,668 INFO mapreduce.Job: Counters: 33
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=237183
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=87
+		HDFS: Number of bytes written=2904
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=1
+		Other local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2518
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=2518
+		Total vcore-milliseconds taken by all map tasks=2518
+		Total megabyte-milliseconds taken by all map tasks=2578432
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=38
+		CPU time spent (ms)=1390
+		Physical memory (bytes) snapshot=267194368
+		Virtual memory (bytes) snapshot=2565709824
+		Total committed heap usage (bytes)=170393600
+		Peak Map Physical memory (bytes)=267194368
+		Peak Map Virtual memory (bytes)=2565709824
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=2904
+2021-09-18 10:49:15,675 INFO mapreduce.ImportJobBase: Transferred 2.8359 KB in 14.71 seconds (197.4168 bytes/sec)
+2021-09-18 10:49:15,678 INFO mapreduce.ImportJobBase: Retrieved 5 records.
+2021-09-18 10:49:15,682 INFO util.AppendUtils: Creating missing output directory - customer_import
+2021-09-18 10:49:15,700 INFO tool.ImportTool: Saving incremental import state to the metastore
+2021-09-18 10:49:15,729 INFO tool.ImportTool: Updated data for job: inc_customer_import_job
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+2021-09-18 10:49:16,304 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-09-18 10:49:17,045 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../hcatalog does not exist! HCatalog jobs will fail.
+Please set $HCAT_HOME to the root of your HCatalog installation.
+Warning: /usr/local/hadoop-env/sqoop-1.4.6/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.SQOOP.SQOOP_USER: invalid variable name
+/usr/local/hadoop-env/hadoop-3.2.1/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.SQOOP.SQOOP_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hadoop-3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-env/hbase-1.3.0/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2021-09-18 10:58:31,634 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6
+2021-09-18 10:58:32,025 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-09-18 10:58:32,207 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+2021-09-18 10:58:32,207 INFO tool.CodeGenTool: Beginning code generation
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+2021-09-18 10:58:32,397 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `customer` AS t LIMIT 1
+2021-09-18 10:58:32,436 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `customer` AS t LIMIT 1
+2021-09-18 10:58:32,447 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/local/hadoop-env/hadoop-3.2.1
+Note: /tmp/sqoop-saif/compile/46724894fabe5feb98b45fd68ba9af13/customer.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2021-09-18 10:58:34,505 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-saif/compile/46724894fabe5feb98b45fd68ba9af13/customer.jar
+2021-09-18 10:58:34,973 INFO tool.ImportTool: Maximal id query for free form incremental import: SELECT MAX(`create_dt`) FROM `customer`
+2021-09-18 10:58:34,975 INFO tool.ImportTool: Incremental import based on column `create_dt`
+2021-09-18 10:58:34,975 INFO tool.ImportTool: Lower bound value: '2021-09-18'
+2021-09-18 10:58:34,975 INFO tool.ImportTool: Upper bound value: '2021-09-19'
+2021-09-18 10:58:34,975 WARN manager.MySQLManager: It looks like you are importing from mysql.
+2021-09-18 10:58:34,975 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+2021-09-18 10:58:34,975 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+2021-09-18 10:58:34,975 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+2021-09-18 10:58:34,988 INFO mapreduce.ImportJobBase: Beginning import of customer
+2021-09-18 10:58:34,989 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2021-09-18 10:58:34,994 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+2021-09-18 10:58:35,023 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `customer` AS t LIMIT 1
+2021-09-18 10:58:35,118 INFO mapreduce.DataDrivenImportJob: Writing Avro schema file: /tmp/sqoop-saif/compile/46724894fabe5feb98b45fd68ba9af13/customer.avsc
+2021-09-18 10:58:35,152 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2021-09-18 10:58:35,240 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+2021-09-18 10:58:35,558 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/saif/.staging/job_1631933353464_0010
+2021-09-18 10:58:35,675 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:35,784 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:35,811 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:35,843 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:35,868 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:35,885 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:35,903 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:35,920 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,363 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,383 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,399 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,420 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,446 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,465 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,486 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,517 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,545 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,558 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,580 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:36,604 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,052 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,071 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,091 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,117 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,136 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,152 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,168 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,613 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,648 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,668 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,689 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,703 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,723 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,747 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:37,764 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:38,194 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:38,233 INFO db.DBInputFormat: Using read commited transaction isolation
+2021-09-18 10:58:38,251 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:38,268 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:38,686 INFO mapreduce.JobSubmitter: number of splits:1
+2021-09-18 10:58:38,795 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2021-09-18 10:58:38,804 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1631933353464_0010
+2021-09-18 10:58:38,804 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2021-09-18 10:58:38,970 INFO conf.Configuration: resource-types.xml not found
+2021-09-18 10:58:38,971 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2021-09-18 10:58:39,020 INFO impl.YarnClientImpl: Submitted application application_1631933353464_0010
+2021-09-18 10:58:39,054 INFO mapreduce.Job: The url to track the job: http://localhost:8088/proxy/application_1631933353464_0010/
+2021-09-18 10:58:39,055 INFO mapreduce.Job: Running job: job_1631933353464_0010
+2021-09-18 10:58:45,500 INFO mapreduce.Job: Job job_1631933353464_0010 running in uber mode : false
+2021-09-18 10:58:45,501 INFO mapreduce.Job:  map 0% reduce 0%
+2021-09-18 10:58:49,553 INFO mapreduce.Job:  map 100% reduce 0%
+2021-09-18 10:58:49,577 INFO mapreduce.Job: Job job_1631933353464_0010 completed successfully
+2021-09-18 10:58:49,652 INFO mapreduce.Job: Counters: 33
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=237183
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=87
+		HDFS: Number of bytes written=3908
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=1
+		Other local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2134
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=2134
+		Total vcore-milliseconds taken by all map tasks=2134
+		Total megabyte-milliseconds taken by all map tasks=2185216
+	Map-Reduce Framework
+		Map input records=11
+		Map output records=11
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=40
+		CPU time spent (ms)=1250
+		Physical memory (bytes) snapshot=259571712
+		Virtual memory (bytes) snapshot=2561314816
+		Total committed heap usage (bytes)=172490752
+		Peak Map Physical memory (bytes)=259571712
+		Peak Map Virtual memory (bytes)=2561314816
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=3908
+2021-09-18 10:58:49,658 INFO mapreduce.ImportJobBase: Transferred 3.8164 KB in 14.4953 seconds (269.6039 bytes/sec)
+2021-09-18 10:58:49,662 INFO mapreduce.ImportJobBase: Retrieved 11 records.
+2021-09-18 10:58:49,667 INFO util.AppendUtils: Creating missing output directory - customer_import
+2021-09-18 10:58:49,685 INFO tool.ImportTool: Saving incremental import state to the metastore
+2021-09-18 10:58:49,716 INFO tool.ImportTool: Updated data for job: inc_customer_import_job

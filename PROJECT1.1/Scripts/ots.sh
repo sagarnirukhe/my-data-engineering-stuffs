@@ -1,0 +1,186 @@
+
+
+#!/bin/bash
+# bash ots.sh --paramfile /home/saif/LFS/PROJECT1.1/Scripts/param.cfg
+
+CURR_DATE=`date +%d-%m-%y`
+TEMP=`basename ${0}`"_"${CURR_DATE}".log"
+LOG_FILENAME=`echo ${TEMP} | sed -r 's/\.sh//g'`
+PARAM_COUNT=0
+
+#### Parameter Handling ####
+while [ "$1" != "" ]; 
+do
+   case $1 in
+    "--p" | "--paramfile")
+        shift
+		PARAM_FILE=$1
+		PARAM_COUNT=`expr ${PARAM_COUNT} + 1`
+        ;;
+    "--h" | "--help") 
+         echo "\e[32mUsage: ots.sh [--p | --paramfile] \e[0m"
+         exit 1
+      ;;
+    *) 
+        echo "Invalid option: $1"
+        echo "Usage: script_name [--p | --paramfile] "
+        exit 1
+       ;;
+  esac
+  shift
+done
+
+if [ $PARAM_COUNT -ne 1 ]
+then
+	echo -e "\e[31mInvalid number of arguments"
+	echo -e "\e[31mUsage: sqoop-hive-integration.sh [--p | --paramfile] 					\e[0m"
+	#log "ERROR: Invalid number of arguments."
+	#log "ERROR: Script Execution ends with an Error."
+	exit 1
+fi
+
+# Include Config File
+. ${PARAM_FILE}
+
+# Function to log execution of 
+log (){
+	#echo "$1"
+	echo "${CURR_DATE}:$1" >> ${LOGS_DIR}${LOG_FILENAME} 2>&1
+}
+
+echo ""
+log "INFO: ********** Script Execution Start **********"
+echo -e "\e[32m********** Script Execution Start ****************************************************************\e[0m"
+echo ""
+
+directory=${ROOT_DIR}"SQL/createTable.sql"
+hive_hql=${ROOT_DIR}"SQL/hive_ddl.hql"
+source_dir=${ROOT_DIR}"Captured_feeds"
+
+echo ""
+# connect to mysql. -D${database}
+# mysql -s -u${username} -p${password}  < ${directory}
+MYSQL_PWD="${password}" mysql -u "${username}" "$@" < ${directory}
+
+if [ $? -ne 0 ]
+then
+	echo -e "\e[31mError while creating Mysql tables\e[0m"
+	log "ERROR: MYSQL DDL script execution Failed."
+	exit 1
+fi
+log "INFO: Mysql DDL Script executed Successfully."
+echo -e "\e[33m********** Mysql: Table Created Successfully *****************************\e[0m"
+
+
+# Connect and show list of tables.
+mysql -u${username} -p${password} -D${database} <<<'show tables' 2>/dev/null | 
+ 
+# Read through the piped result until it's empty.
+while IFS='\n' read list; do
+  if [[ ${list} = "Tables_in_customer_db" ]]; then
+    echo $list
+    echo "----------------------------------------"
+  else
+    echo $list
+  fi
+done
+echo ""
+
+echo -e "\e[33m********** MySql Data Import Start ***************************************\e[0m"
+log "INFO: MySql Data Import Start."
+
+if [ `ls -1 ${source_dir}/*.csv 2>/dev/null | wc -l ` -gt 0 ];
+then
+	for i in $(ls ${source_dir}/*.csv)
+	do
+		file_name=`echo ${i} | awk -F'/' '{print $NF}'`
+		current_time=$(date "+%Y.%m.%d-%H.%M.%S")
+		#Load First Source data file into MySql Table
+		# mysql --local-infile=1 -s -u${username} -p${password} -D${database} <<EOF
+		MYSQL_PWD="${password}" mysql --local-infile=1 -s -u${username} -D${database} "$@" <<EOF
+		SET GLOBAL local_infile=1;
+		LOAD DATA LOCAL INFILE '${i}' INTO TABLE customer
+		FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+		LINES TERMINATED BY '\n'
+		SET filename='${file_name}',create_dt = '$(date "+%Y-%m-%d")';
+EOF
+		echo "${i} File load Completed."
+
+		#file_name=`echo ${i} | awk -F'/' '{print $NF}'`
+		echo "File Name:" ${file_name}
+		mv ${i} ${source_dir}/archive/${file_name}_$(date "+%Y%m%d%H%M%S")
+	done
+	
+	log "INFO: MySql Data Import Completed."
+	echo ""
+	echo -e "\e[33m********** MySql Data Import Completed *******************************\e[0m"
+	echo ""
+else 
+	echo "Source Files does not exist...."
+	echo ""
+	log "INFO: Source Files does not available for processing."
+fi
+
+#Create Sqoop Job to load data into HDFS
+echo -e "\e[33m********** Sqoop Job Execution Start *************************************\e[0m"
+sqoop job --delete inc_customer_import_job &> ${LOGS_DIR}sqoopLogFile_${CURR_DATE}.log
+sqoop job --create inc_customer_import_job -- import --connect jdbc:mysql://localhost:${PORT}/${database}?useSSL=False --username ${username} --password-file ${PASSWORD} --table ${sqoop_tblename} --m 1 --target-dir ${hdfs_location}"customer_import" --as-avrodatafile  --incremental append --check-column create_dt --last-value 1900-01-01 &>> ${LOGS_DIR}sqoopLogFile_${CURR_DATE}.log 
+
+if [ $? -ne 0 ]
+then
+	echo -e "\e[31mError while creating SQOOP Job\e[0m"
+	log "ERROR: Error while creating SQOOP JOb."
+	exit 1
+fi
+log "INFO: SQOOP Job Created Successfully."
+
+JOBLIST=`sqoop job --list | grep "inc_customer_import_job"`
+echo ""
+echo "Sqoop Job:" ${JOBLIST} " created  Successfully."
+
+#Execute sqoop Job
+sqoop job --exec inc_customer_import_job &>> ${LOGS_DIR}sqoopLogFile_${CURR_DATE}.log
+
+if [ $? -ne 0 ]
+then
+	echo -e "\e[31mError while executing SQOOP Job\e[0m"
+	log "ERROR: Error while executing SQOOP JOb."
+	exit 1
+fi
+log "INFO: SQOOP Job Created Successfully."
+echo "Sqoop Job:" ${JOBLIST} " executed Successfully."
+echo ""
+
+avaro_schema_url=$(ls ${ROOT_DIR}"Scripts"/*.avsc)
+
+#Put AvroSchema URL into HDFS
+hdfs dfs -put -f ${avaro_schema_url} ${hdfs_location} &>> ${LOGS_DIR}sqoopLogFile_${CURR_DATE}.log
+
+
+if [ $? -eq 0 ]
+then
+	log "INFO: Avaro-Schema imported into HDFS Successfully."
+	echo "Sqoop Job: Avaro-Schema File imported into HDFS."
+	echo ""
+fi
+
+#Create Hive tables into Hive Schema
+echo -e "\e[33m********** Hive Execution Start ******************************************\e[0m"
+
+hive --hivevar hive_db_name=${hive_db_name} --hivevar hive_tbl_name=${manage_tble_name} --hivevar hive_ext_tbl_name=${external_table_name} --hivevar hive_op_path=${hdfs_location}"customer_import" --hivevar hive_avaro_schema="hdfs://localhost:9000"${hdfs_location}${sqoop_tblename}".avsc" -f "${ROOT_DIR}SQL/hive_ddl.hql" &> ${LOGS_DIR}hiveLogFile_${CURR_DATE}.log 
+
+if [ $? -ne 0 ]
+then
+	echo -e "\e[31mError while executing Hive Job\e[0m"
+	log "ERROR: Error while executing Hive JOb."
+	exit 1
+fi
+log "INFO: HIVE Job Created Successfully."
+echo "Hive Operations completed.."
+echo ""
+echo -e "\e[33m********** Hive Execution End ********************************************\e[0m"
+echo ""
+
+log "INFO: ********** Script Execution Completed **********"
+echo -e "\e[32m********** Script Execution Completed ************************************************************\e[0m"
+echo ""

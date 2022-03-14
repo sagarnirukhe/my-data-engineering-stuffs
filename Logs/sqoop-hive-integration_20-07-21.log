@@ -1,0 +1,21 @@
+20-07-21:INFO: ********** Script Execution Start **********
+20-07-21:INFO: Read List of Tables From retail_db
+20-07-21:INFO: Validated Database Connectivity retail_db Successfully.
+20-07-21:INFO: Verified categories table Record Count Successfully.
+20-07-21:INFO: Executed sqoop job_1 for categories Successfully.
+20-07-21:INFO: Executed sqoop job_2 for categories Successfully.
+20-07-21:INFO: Executed sqoop job_3 Successfully.
+20-07-21:INFO: Executed Hive job_1 Successfully.
+20-07-21:INFO: ********** Script Execution End **********
+20-07-21:INFO: ********** Script Execution Start **********
+20-07-21:INFO: Read List of Tables From retail_db
+20-07-21:INFO: Validated Database Connectivity retail_db Successfully.
+20-07-21:INFO: Verified categories table Record Count Successfully.
+20-07-21:INFO: Executed sqoop job_1 for categories Successfully.
+20-07-21:INFO: Executed sqoop job_2 for categories Successfully.
+20-07-21:INFO: Executed sqoop job_3 Successfully.
+20-07-21:INFO: Executed Hive job_1 Successfully.
+20-07-21:INFO: ********** Script Execution End **********
+20-07-21:INFO: ********** Script Execution Start **********
+20-07-21:ERROR: Invalid number of arguments.
+20-07-21:ERROR: Script Execution ends with an Error.

@@ -1,0 +1,6 @@
+18-09-21:INFO: ********** Script Execution Start **********
+18-09-21:INFO: MySql Data Import Start.
+18-09-21:INFO: MySql Data Import Completed.
+18-09-21:INFO: SQOOP Job executed Successfully.
+18-09-21:INFO: HIVE Job Executed Successfully.
+18-09-21:INFO: ********** Script Execution Completed **********
